@@ -9,15 +9,26 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+//    создаем navigation controller
+    var navController = UINavigationController()
     var window: UIWindow?
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+//        создаем windowscene
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+//        инициализируем window
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+//        создаем переменную и привязываем ее к первому вью контроллеру
+        let firstVc = ViewController()
+//        назначаем первый вью контроллер рутовым
+        self.navController = UINavigationController(rootViewController: firstVc)
+//        делаем нав контроллер рутовым для виндов
+        self.window?.rootViewController = navController
+//        добавляем цвет фона у виндов
+        self.window?.backgroundColor = UIColor.blue
+        self.window?.makeKeyAndVisible()
+        window?.windowScene = windowScene
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

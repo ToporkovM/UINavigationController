@@ -15,6 +15,7 @@
 		04783706239D014A00C9F4B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04783704239D014A00C9F4B9 /* LaunchScreen.storyboard */; };
 		04783711239D014A00C9F4B9 /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783710239D014A00C9F4B9 /* NavigationControllerTests.swift */; };
 		0478371C239D014A00C9F4B9 /* NavigationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0478371B239D014A00C9F4B9 /* NavigationControllerUITests.swift */; };
+		0478372A239D16AA00C9F4B9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04783729239D16AA00C9F4B9 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		04783717239D014A00C9F4B9 /* NavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0478371B239D014A00C9F4B9 /* NavigationControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerUITests.swift; sourceTree = "<group>"; };
 		0478371D239D014A00C9F4B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04783729239D16AA00C9F4B9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				047836F9239D013F00C9F4B9 /* AppDelegate.swift */,
 				047836FB239D013F00C9F4B9 /* SceneDelegate.swift */,
 				047836FD239D013F00C9F4B9 /* ViewController.swift */,
+				04783729239D16AA00C9F4B9 /* SecondViewController.swift */,
 				047836FF239D013F00C9F4B9 /* Main.storyboard */,
 				04783702239D014A00C9F4B9 /* Assets.xcassets */,
 				04783704239D014A00C9F4B9 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0478372A239D16AA00C9F4B9 /* SecondViewController.swift in Sources */,
 				047836FE239D013F00C9F4B9 /* ViewController.swift in Sources */,
 				047836FA239D013F00C9F4B9 /* AppDelegate.swift in Sources */,
 				047836FC239D013F00C9F4B9 /* SceneDelegate.swift in Sources */,
