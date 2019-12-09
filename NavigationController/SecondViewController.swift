@@ -10,21 +10,31 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "SecondVC"
+        createdIconsTitle()
+        createdBarButtonRight()
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        self.perform(#selector(goBack), with: nil, afterDelay: 3.0)
-        
+    //MARK: Methode
+    fileprivate func createdIconsTitle() {
+           let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+           imageView.contentMode = .scaleAspectFit
+           let image = UIImage(named: "apple")
+           imageView.image = image
+           navigationItem.titleView = imageView
+       }
+    
+    fileprivate func createdBarButtonRight() {
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(printHi(sender:)))
     }
-    @objc func goBack(){
-        self.navigationController?.popViewController(animated: true)
+    
+    @objc func printHi (sender: UIBarButtonItem) {
+        print("hi")
     }
     
 
     
-
 }

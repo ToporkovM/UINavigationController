@@ -26,7 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        делаем нав контроллер рутовым для виндов
         self.window?.rootViewController = navController
 //        добавляем цвет фона у виндов
-        self.window?.backgroundColor = UIColor.blue
+        self.window?.backgroundColor = UIColor.white
         self.window?.makeKeyAndVisible()
         window?.windowScene = windowScene
     }
